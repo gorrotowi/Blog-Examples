@@ -20,6 +20,11 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <com.gorrotowi.latofonts.LatoButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World!"/>
+
             <com.gorrotowi.latofonts.LatoTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

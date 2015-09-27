@@ -2,22 +2,21 @@ package com.gorrotowi.latofonts;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.widget.TextView;
+import android.widget.Button;
 
 /**
  * Created by gorro on 27/09/15.
  */
-public class LatoTextView extends TextView {
+public class LatoButton extends Button {
 
-    public LatoTextView(Context context) {
+    public LatoButton(Context context) {
         super(context);
         //En este caso 'this' hace referencia al View de tipo TextView
         FontStyle.initStyle(getContext(), this);
     }
 
-    public LatoTextView(Context context, AttributeSet attrs) {
+    public LatoButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         TypedArray typedArray = context.getTheme().obtainStyledAttributes(
                 attrs,
@@ -33,5 +32,4 @@ public class LatoTextView extends TextView {
             typedArray.recycle();
         }
     }
-
 }

@@ -10,8 +10,7 @@ import android.widget.TextView;
 /**
  * Created by gorro on 27/09/15.
  */
-public enum FontStyle {
-    SINGLETON;
+public class FontStyle {
 
     public static void initStyle(Context ctx, View v) {
         Typeface tp = Typeface.createFromAsset(ctx.getAssets(), "fonts/Lato-Regular.ttf");
